@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>PPT - GAME</title>
+</head>
+<body>
+    <section class="starter" id="starter">
+        <h1 class="tittle">Piedra, Papel o Tijera - JUEGO</h1>
+        <button id="play-button">PLAY</button>
+        <p>By: BrandonElPerro</p>
+    </section>
+
+    <section class="combat" id="combat">
+        <div class="combat-progress" id="combat-progress">
+            <p class="span">Tienes: <span id="span-vidas-jugador">3</span> vidas</p>
+            <p class="span">Enemigo tiene: <span id="span-vidas-enemigo">3</span> vidas</p>
+        </div>
+
+        <div class="buttons-combat">
+            <input type="radio" name="objeto" id="stone-radio" />
+            <label class="imagen-ataque" for="stone-radio">
+                <p>PIEDRA</p>
+                <img src="./Imgs/rock.png" alt="stone-radio">
+            </label>
+                
+            <input type="radio" name="objeto" id="paper-radio" />
+            <label class="imagen-ataque" for="paper-radio">
+                <p>PAPEL</p>
+                <img src="./Imgs/paper.png" alt="paper-radio">
+            </label>
+
+            <input type="radio" name="objeto" id="scissor-radio" />
+            <label class="imagen-ataque" for="scissor-radio">
+                <p>TIJERA</p>
+                <img src="./Imgs/scissor.png" alt="scissor-radio">
+            </label>
+        </div>
+        <button id="chose-button">Seleccionar ataque</button>
+
+        <div id="resultado">
+            <p>Tu ganadas: <span id="wins"></span></p>
+            <p>Tus perdidas: <span id="loses"></span></p>
+            <p>Atacaste con: <span id="result-player"></span></p>
+            <p>El enemigo ataco con: <span id="result-enemy"></span></p>
+            <p id="result-combat"></p>
+        </div>
+    </section>
+
+    <section id="reset">
+        <div id="reset-pantalla" class="reset-screen">
+            <p id="result-final" class="tittle"></p>
+            <p>Quieres reiniciar el juego?</p>
+            <button id="reset-button">RESET GAME</button>
+        </div>
+    </section>
+
+    <script src="./js/code.js"></script>
+</body>
+</html>

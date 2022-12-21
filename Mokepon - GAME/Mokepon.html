@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Mokepon Game</title>
+        <link rel="stylesheet" href="./css/Style.css">
+    </head>
+    <body>
+        <section id="seleccionar-mascota">
+            <h1 class="titulo">Mokepon 🔥💧🌱</h1>
+
+            <h2 class="subtitulo">Elige el Pokemon:</h2>
+
+            <div class="tarjetas">
+                <input type="radio" name="mascota" id="vaporeon" />
+                <label class="tarjeta-de-mokepon" for="vaporeon">
+                    <p>Vaporeon</p>
+                    <img src="./Assets/Vaporeon.png" alt="Vaporeon">
+                </label>
+                
+                <input type="radio" name="mascota" id="bulbasaur" />
+                <label class="tarjeta-de-mokepon" for="bulbasaur">
+                    <p>Bulbasaur</p>
+                    <img src="./Assets/Bulbapedia, the community-driven Pokémon encyclopedia.png" alt="Bulbasaur">
+                </label>
+                
+                <input type="radio" name="mascota" id="scorbunny" />
+                <label class="tarjeta-de-mokepon" for="scorbunny">
+                    <p>Scorbunny</p>
+                    <img src="./Assets/Scorbunny.png" alt="Scorbunny">
+                </label>
+            </div>
+
+            <button id="boton-mascota">Juega ya!</button>
+
+            <p class="Credits">By: Bryan Quintana</p>
+        </section>
+
+        <section id="seleccionar-ataque">
+            <h1 class="titulo">Mokepon</h1>
+
+            <h2 class="subtitulo">Elige un ataque:</h2>
+
+            <div class="tarjetas-ataques">
+                <button id="boton-fuego" class="boton-de-ataque">Fuego 🔥</button>
+                <button id="boton-agua" class="boton-de-ataque">Agua 💧</button>
+                <button id="boton-tierra" class="boton-de-ataque">Tierra 🌱</button>
+            </div>
+
+            <div id="mensajes">
+                <div id="resultado">Mucha suerte 🥳</div>
+
+                <section id="reiniciar">
+                    <button id="boton-reiniciar">Reiniciar</button>
+                </section>
+            </div>
+
+            <div class="ataques">
+                <div class="ataques-jugador">
+                    <p id="vidas-jugador">3</p>
+                    <p id="mascota-jugador"></p>
+                    <div id="ataques-del-jugador"></div>
+                </div>
+                <div class="ataques-enemigo">
+                    <p id="vidas-enemigo">3</p>
+                    <p id="mascota-enemigo"></p>
+                    <div id="ataques-del-enemigo"></div>
+                </div>
+            </div>
+            <p class="Credits">By: Bryan Quintana</p>
+        </section>
+        <script src="./js/mokepon.js"></script>
+    </body>
+</html>

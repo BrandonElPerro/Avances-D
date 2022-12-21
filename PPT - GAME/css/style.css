@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C315E;
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+}
+input{
+    display: none;
+}
+
+
+input:checked + label, input:hover + label{
+    background: #222222;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button{
+    background-color: #344D67;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+}
+
+button:hover{
+    background: #222222;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:active{
+    background: #001253;
+    border-radius: 10px;
+    border: none;
+}
+
+#starter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+}
+
+#combat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 850px; 
+}
+
+.tittle{
+    background-color: #344D67;
+    border-radius: 10px;
+    border: none;
+    padding: 25px;
+}
+
+.span{
+    background-color: #344D67;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+}
+
+.reset-screen{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-combat{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    gap: 10px;
+}
+
+.imagen-ataque{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #344D67;
+    border-radius: 10px;
+}
+
+.imagen-ataque img{
+    width: 80px;
+}
+
+@media (max-min: 360px){
+    .buttons-combat, .combat-progress, .resultado, .reset-screen{
+        flex-direction: column;
+    }
+}
